@@ -86,7 +86,7 @@
         }
         
         if([companyAtIndex.directSubmitTag isEqualToString:@"1"]){
-            cell.batchNum.text = @"单户入网";
+            cell.batchNum.text = @"可单户提交";
         }else{
             cell.batchNum.text = @"五户联报";
         }
@@ -135,7 +135,7 @@
         
         
         if([companyAtIndex.directSubmitTag isEqualToString:@"1"]){
-            cell.batchNum.text = @"单户入网";
+            cell.batchNum.text = @"可单户提交";
         }else{
             cell.batchNum.text = @"五户联报";
         }
@@ -247,7 +247,8 @@
             }
             else{
                 NSMutableDictionary *dic = [self myInitDic];
-                NSLog(@"dic==%@",dic);
+                NSString *jsonString = [self DataTOjsonString:dic];
+                NSLog(@"dic==%@,jsonString==%@",dic,jsonString);
                 
                 NSString *urlstr = [NSString stringWithFormat:@"%@/%@",myDelegate.URL,@"businessSubmitBatch"];
                 
@@ -255,7 +256,7 @@
                 ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:myurl];
                 [tooles showHUD:@"请稍候！"];
                 
-                [request setPostValue:dic forKey:@"jsonObj"];
+                [request setPostValue:jsonString forKey:@"jsonObj"];
                 [request setPostValue:myDelegate.loginName forKey:@"userLoginId"];
                 
                 [request setDelegate:self];
@@ -269,7 +270,8 @@
         }else if(![singleArray isKindOfClass:[NSNull class]]&&[singleArray count]>0){
             
             NSMutableDictionary *dic = [self myInitDic];
-            NSLog(@"dic==%@",dic);
+            NSString *jsonString = [self DataTOjsonString:dic];
+            NSLog(@"dic==%@,jsonString==%@",dic,jsonString);
             
             NSString *urlstr = [NSString stringWithFormat:@"%@/%@",myDelegate.URL,@"businessSubmitBatch"];
             
@@ -277,7 +279,7 @@
             ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:myurl];
             [tooles showHUD:@"请稍候！"];
             
-            [request setPostValue:dic forKey:@"jsonObj"];
+            [request setPostValue:jsonString forKey:@"jsonObj"];
             [request setPostValue:myDelegate.loginName forKey:@"userLoginId"];
             
             [request setDelegate:self];
@@ -291,6 +293,7 @@
     }
 }
 -(NSMutableDictionary *) myInitDic{
+    TLAppDelegate *myDelegate = (TLAppDelegate *)[[UIApplication sharedApplication]delegate];
     NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
     NSMutableArray *list= [[NSMutableArray alloc]init];
     NSArray *array = [[NSArray alloc]init];
@@ -306,14 +309,33 @@
         NSString *process = [NSString stringWithFormat:@"%@",processId];
         [dic1 setObject:process forKey:@"processId"];
         if([self.singleFlag isEqualToString:@"1"]){
-            [dic1 setObject:[self.single objectForKey:processId] forKey:@"remark"];
+            NSString *s = [self.single objectForKey:processId];
+             NSString *transString = [NSString stringWithString:[s stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+            [dic1 setObject:transString forKey:@"remark"];
         }else{
-            [dic1 setObject:[self.comment objectForKey:processId] forKey:@"remark"];
+            NSString *s = [self.comment objectForKey:processId];
+            NSString *transString = [NSString stringWithString:[s stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+            [dic1 setObject:transString forKey:@"remark"];
         }
         [list addObject:dic1];
     }
     [dic setObject:list forKey:@"data"];
+    [dic setObject:myDelegate.loginName forKey:@"userLoginId"];
     return dic;
+}
+-(NSString*)DataTOjsonString:(id)object
+{
+    NSString *jsonString = nil;
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:object
+                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                         error:&error];
+    if (! jsonData) {
+        NSLog(@"Got an error: %@", error);
+    } else {
+        jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    return jsonString;
 }
 -(NSNumber *) findNum:(NSString *) processId{
     for(TLCompany *com in self.companies){
@@ -331,6 +353,7 @@
     [str UTF8String];
     NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *all= [NSJSONSerialization JSONObjectWithData:data options:    NSJSONReadingMutableLeaves error:&error];
+    NSLog(@"all==%@",all);
     NSDictionary *loginJson = [all objectForKey:@"loginJson"];
     NSString *result = [loginJson objectForKey:@"result"];
     if([result isEqualToString:@"success"]){
