@@ -170,6 +170,19 @@
 		04FD72F018EE4AE100FA2F37 /* 气球.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD72B518EE4AE100FA2F37 /* 气球.png */; };
 		04FD72F118EE4AE100FA2F37 /* 美食.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD72B618EE4AE100FA2F37 /* 美食.png */; };
 		04FD72F318EE4AE100FA2F37 /* 酒店.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD72B818EE4AE100FA2F37 /* 酒店.png */; };
+		18CD298E1BD9C6B300F59377 /* TLRecallEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD298B1BD9C6B300F59377 /* TLRecallEntity.m */; };
+		18CD298F1BD9C6B300F59377 /* TLRecallImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD298D1BD9C6B300F59377 /* TLRecallImageViewController.m */; };
+		18CD29921BD9C6D100F59377 /* TLRecallScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD29911BD9C6D100F59377 /* TLRecallScanCodeViewController.m */; };
+		18CD29981BD9C75900F59377 /* TLRecallMentouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD29971BD9C75900F59377 /* TLRecallMentouViewController.m */; };
+		18CD299D1BD9C78000F59377 /* TLRecallInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD299A1BD9C78000F59377 /* TLRecallInfoViewController.m */; };
+		18CD299E1BD9C78000F59377 /* TLRecallPhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD299C1BD9C78000F59377 /* TLRecallPhotoListViewController.m */; };
+		18CD29A11BD9C7C400F59377 /* TLRecallPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD29A01BD9C7C400F59377 /* TLRecallPhotoViewController.m */; };
+		18CD29A51BD9C7EE00F59377 /* TLRecallScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD29A41BD9C7EE00F59377 /* TLRecallScanViewController.m */; };
+		18CD29A91BD9C83300F59377 /* TLRecallMerchantInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD29A71BD9C83300F59377 /* TLRecallMerchantInfoViewController.m */; };
+		18CD29AC1BD9C86100F59377 /* TLRecallPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD29AB1BD9C86100F59377 /* TLRecallPhotoViewController.m */; };
+		18CD29AE1BD9C97900F59377 /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CD29AD1BD9C97900F59377 /* buttonbg.png */; };
+		18CD29B01BD9C98700F59377 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CD29AF1BD9C98700F59377 /* box.png */; };
+		18CD29B21BD9C9F100F59377 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CD29B11BD9C9F100F59377 /* line.png */; };
 		F04664F616A3E75000E611CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04664F516A3E75000E611CB /* UIKit.framework */; };
 		F04664F816A3E75000E611CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04664F716A3E75000E611CB /* Foundation.framework */; };
 		F04664FA16A3E75000E611CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04664F916A3E75000E611CB /* CoreGraphics.framework */; };
@@ -414,6 +427,30 @@
 		04FD72B518EE4AE100FA2F37 /* 气球.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "气球.png"; sourceTree = "<group>"; };
 		04FD72B618EE4AE100FA2F37 /* 美食.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美食.png"; sourceTree = "<group>"; };
 		04FD72B818EE4AE100FA2F37 /* 酒店.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "酒店.png"; sourceTree = "<group>"; };
+		18CD298A1BD9C6B300F59377 /* TLRecallEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallEntity.h; path = "../../../拍照系统/TongLian/TLRecallEntity.h"; sourceTree = "<group>"; };
+		18CD298B1BD9C6B300F59377 /* TLRecallEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallEntity.m; path = "../../../拍照系统/TongLian/TLRecallEntity.m"; sourceTree = "<group>"; };
+		18CD298C1BD9C6B300F59377 /* TLRecallImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallImageViewController.h; path = "../../../拍照系统/TongLian/TLRecallImageViewController.h"; sourceTree = "<group>"; };
+		18CD298D1BD9C6B300F59377 /* TLRecallImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallImageViewController.m; path = "../../../拍照系统/TongLian/TLRecallImageViewController.m"; sourceTree = "<group>"; };
+		18CD29901BD9C6D100F59377 /* TLRecallScanCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallScanCodeViewController.h; path = "../../../拍照系统/TongLian/TLRecallScanCodeViewController.h"; sourceTree = "<group>"; };
+		18CD29911BD9C6D100F59377 /* TLRecallScanCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallScanCodeViewController.m; path = "../../../拍照系统/TongLian/TLRecallScanCodeViewController.m"; sourceTree = "<group>"; };
+		18CD29961BD9C75900F59377 /* TLRecallMentouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallMentouViewController.h; path = "../../../拍照系统/TongLian/TLRecallMentouViewController.h"; sourceTree = "<group>"; };
+		18CD29971BD9C75900F59377 /* TLRecallMentouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallMentouViewController.m; path = "../../../拍照系统/TongLian/TLRecallMentouViewController.m"; sourceTree = "<group>"; };
+		18CD29991BD9C78000F59377 /* TLRecallInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallInfoViewController.h; path = "../../../拍照系统/TongLian/TLRecallInfoViewController.h"; sourceTree = "<group>"; };
+		18CD299A1BD9C78000F59377 /* TLRecallInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallInfoViewController.m; path = "../../../拍照系统/TongLian/TLRecallInfoViewController.m"; sourceTree = "<group>"; };
+		18CD299B1BD9C78000F59377 /* TLRecallPhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallPhotoListViewController.h; path = "../../../拍照系统/TongLian/TLRecallPhotoListViewController.h"; sourceTree = "<group>"; };
+		18CD299C1BD9C78000F59377 /* TLRecallPhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallPhotoListViewController.m; path = "../../../拍照系统/TongLian/TLRecallPhotoListViewController.m"; sourceTree = "<group>"; };
+		18CD299F1BD9C7C400F59377 /* TLRecallPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallPhotoViewController.h; path = "../../../互动助手/商机转介/TLRecallPhotoViewController.h"; sourceTree = "<group>"; };
+		18CD29A01BD9C7C400F59377 /* TLRecallPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallPhotoViewController.m; path = "../../../互动助手/商机转介/TLRecallPhotoViewController.m"; sourceTree = "<group>"; };
+		18CD29A31BD9C7EE00F59377 /* TLRecallScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallScanViewController.h; path = "../../../拍照系统/TongLian/TLRecallScanViewController.h"; sourceTree = "<group>"; };
+		18CD29A41BD9C7EE00F59377 /* TLRecallScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallScanViewController.m; path = "../../../拍照系统/TongLian/TLRecallScanViewController.m"; sourceTree = "<group>"; };
+		18CD29A61BD9C83300F59377 /* TLRecallMerchantInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallMerchantInfoViewController.h; path = "../../../拍照系统/TongLian/TLRecallMerchantInfoViewController.h"; sourceTree = "<group>"; };
+		18CD29A71BD9C83300F59377 /* TLRecallMerchantInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallMerchantInfoViewController.m; path = "../../../拍照系统/TongLian/TLRecallMerchantInfoViewController.m"; sourceTree = "<group>"; };
+		18CD29A81BD9C83300F59377 /* TLRecallPassValueDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallPassValueDelegate.h; path = "../../../拍照系统/TongLian/TLRecallPassValueDelegate.h"; sourceTree = "<group>"; };
+		18CD29AA1BD9C86100F59377 /* TLRecallPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRecallPhotoViewController.h; path = "../../../拍照系统/TongLian/TLRecallPhotoViewController.h"; sourceTree = "<group>"; };
+		18CD29AB1BD9C86100F59377 /* TLRecallPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRecallPhotoViewController.m; path = "../../../拍照系统/TongLian/TLRecallPhotoViewController.m"; sourceTree = "<group>"; };
+		18CD29AD1BD9C97900F59377 /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg.png; sourceTree = "<group>"; };
+		18CD29AF1BD9C98700F59377 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		18CD29B11BD9C9F100F59377 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		F04664F116A3E75000E611CB /* TongLian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TongLian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04664F516A3E75000E611CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F04664F716A3E75000E611CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -620,6 +657,9 @@
 		04FD725018EE4A8F00FA2F37 /* pictrue */ = {
 			isa = PBXGroup;
 			children = (
+				18CD29B11BD9C9F100F59377 /* line.png */,
+				18CD29AF1BD9C98700F59377 /* box.png */,
+				18CD29AD1BD9C97900F59377 /* buttonbg.png */,
 				0466F5B81990AA160093406D /* Default.png */,
 				04FD725318EE4A8F00FA2F37 /* B0ECB0F4-47F6-491D-8E6C-E241703B6DC7.png */,
 				04FD725418EE4A8F00FA2F37 /* Default-568h@2x.png */,
@@ -749,6 +789,34 @@
 			name = bean;
 			sourceTree = "<group>";
 		};
+		18CD29891BD9C62900F59377 /* 商户回访 */ = {
+			isa = PBXGroup;
+			children = (
+				18CD29AA1BD9C86100F59377 /* TLRecallPhotoViewController.h */,
+				18CD29AB1BD9C86100F59377 /* TLRecallPhotoViewController.m */,
+				18CD29A61BD9C83300F59377 /* TLRecallMerchantInfoViewController.h */,
+				18CD29A71BD9C83300F59377 /* TLRecallMerchantInfoViewController.m */,
+				18CD29A81BD9C83300F59377 /* TLRecallPassValueDelegate.h */,
+				18CD29A31BD9C7EE00F59377 /* TLRecallScanViewController.h */,
+				18CD29A41BD9C7EE00F59377 /* TLRecallScanViewController.m */,
+				18CD299F1BD9C7C400F59377 /* TLRecallPhotoViewController.h */,
+				18CD29A01BD9C7C400F59377 /* TLRecallPhotoViewController.m */,
+				18CD29991BD9C78000F59377 /* TLRecallInfoViewController.h */,
+				18CD299A1BD9C78000F59377 /* TLRecallInfoViewController.m */,
+				18CD299B1BD9C78000F59377 /* TLRecallPhotoListViewController.h */,
+				18CD299C1BD9C78000F59377 /* TLRecallPhotoListViewController.m */,
+				18CD29961BD9C75900F59377 /* TLRecallMentouViewController.h */,
+				18CD29971BD9C75900F59377 /* TLRecallMentouViewController.m */,
+				18CD29901BD9C6D100F59377 /* TLRecallScanCodeViewController.h */,
+				18CD29911BD9C6D100F59377 /* TLRecallScanCodeViewController.m */,
+				18CD298A1BD9C6B300F59377 /* TLRecallEntity.h */,
+				18CD298B1BD9C6B300F59377 /* TLRecallEntity.m */,
+				18CD298C1BD9C6B300F59377 /* TLRecallImageViewController.h */,
+				18CD298D1BD9C6B300F59377 /* TLRecallImageViewController.m */,
+			);
+			name = "商户回访";
+			sourceTree = "<group>";
+		};
 		F04664E616A3E75000E611CB = {
 			isa = PBXGroup;
 			children = (
@@ -789,6 +857,7 @@
 		F04664FB16A3E75000E611CB /* TongLian */ = {
 			isa = PBXGroup;
 			children = (
+				18CD29891BD9C62900F59377 /* 商户回访 */,
 				04EC2BA31BB4E10200BDC082 /* 收银宝 */,
 				04C4F50F1A63B801005C506A /* 装机反馈 */,
 				04C93D601A24246A00EAA2A4 /* T+0 */,
@@ -928,6 +997,7 @@
 				043BEB5D1908E2CB00BEF5C1 /* 已拍2照2.png in Resources */,
 				04FD72F118EE4AE100FA2F37 /* 美食.png in Resources */,
 				04FD72CB18EE4AE100FA2F37 /* delete.png in Resources */,
+				18CD29B01BD9C98700F59377 /* box.png in Resources */,
 				04FD72DE18EE4AE100FA2F37 /* phonecall.png in Resources */,
 				04FD72DC18EE4AE100FA2F37 /* logo114.png in Resources */,
 				04BD63CB1A1ECC2500716232 /* T+0.png in Resources */,
@@ -950,6 +1020,7 @@
 				04FD72EC18EE4AE100FA2F37 /* xicon.png in Resources */,
 				04FD72B918EE4AE100FA2F37 /* about2.png in Resources */,
 				04FD72E318EE4AE100FA2F37 /* search.png in Resources */,
+				18CD29AE1BD9C97900F59377 /* buttonbg.png in Resources */,
 				04FD72DF18EE4AE100FA2F37 /* photo.png in Resources */,
 				04FD72E818EE4AE100FA2F37 /* sumbit.png in Resources */,
 				04FD72C618EE4AE100FA2F37 /* checkbox_unselect.png in Resources */,
@@ -1019,6 +1090,7 @@
 				04FD727618EE4A8F00FA2F37 /* splash(ios).png in Resources */,
 				04FD726918EE4A8F00FA2F37 /* B0ECB0F4-47F6-491D-8E6C-E241703B6DC7.png in Resources */,
 				043BEB5B1908E2CB00BEF5C1 /* home32.png in Resources */,
+				18CD29B21BD9C9F100F59377 /* line.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,6 +1102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F046650216A3E75000E611CB /* main.m in Sources */,
+				18CD298E1BD9C6B300F59377 /* TLRecallEntity.m in Sources */,
 				04DE05F8194053830003A351 /* TLNetTypeTableViewController.m in Sources */,
 				F046650616A3E75000E611CB /* TLAppDelegate.m in Sources */,
 				F046650C16A3E75000E611CB /* TLRootTableViewController.m in Sources */,
@@ -1041,6 +1114,7 @@
 				04BD63D11A1F12A200716232 /* TLChangeCell.m in Sources */,
 				F0EF441716B7A903000FA57D /* TLWorkListTableViewController.m in Sources */,
 				0432749519527A61000F553E /* TLFeedbackTableViewController.m in Sources */,
+				18CD29921BD9C6D100F59377 /* TLRecallScanCodeViewController.m in Sources */,
 				0429BA15197669E4001297C4 /* wiUIImageView+Category.m in Sources */,
 				04B3F323181F82A1004F2699 /* TLDetailViewController.m in Sources */,
 				04B9CDBB1A64BF27008CA06C /* TLFnotSubmit.m in Sources */,
@@ -1051,7 +1125,9 @@
 				04D139A11A70C91C002FEA50 /* TLBranchList.m in Sources */,
 				04CB37531820A4320036CE99 /* TLTcell.m in Sources */,
 				0422827217DEE9BB000572BB /* TLImageViewController.m in Sources */,
+				18CD298F1BD9C6B300F59377 /* TLRecallImageViewController.m in Sources */,
 				04188E4518E15A1700AF2FB4 /* TLRecallPhotoViewController.m in Sources */,
+				18CD29A51BD9C7EE00F59377 /* TLRecallScanViewController.m in Sources */,
 				04EC2BA61BB4E14100BDC082 /* TLShouyinbaoList.m in Sources */,
 				0422829B17DEEC3A000572BB /* TLLoginViewController.m in Sources */,
 				042282B817DF017B000572BB /* ASIAuthenticationDialog.m in Sources */,
@@ -1065,8 +1141,11 @@
 				04D139A01A70C91C002FEA50 /* TLBankList.m in Sources */,
 				042282BD17DF017B000572BB /* ASINetworkQueue.m in Sources */,
 				0432749E1952BAD5000F553E /* TLShowImageViewController.m in Sources */,
+				18CD29A11BD9C7C400F59377 /* TLRecallPhotoViewController.m in Sources */,
+				18CD29A91BD9C83300F59377 /* TLRecallMerchantInfoViewController.m in Sources */,
 				042282BE17DF017B000572BB /* Reachability.m in Sources */,
 				042282BF17DF017B000572BB /* MBProgressHUD.m in Sources */,
+				18CD299E1BD9C78000F59377 /* TLRecallPhotoListViewController.m in Sources */,
 				04C4F5121A63B88C005C506A /* TLCategory.m in Sources */,
 				04251D6618DA7EF600418256 /* TLRCell.m in Sources */,
 				04CB37501820982C0036CE99 /* TLMySubmitTaskController.m in Sources */,
@@ -1084,9 +1163,11 @@
 				04222C5C17EED4DB005256F7 /* TLPlaceViewController.m in Sources */,
 				04251D6918DA888B00418256 /* TLRecallTableViewController.m in Sources */,
 				04B005E118D6F47A005D20A8 /* TLReaderViewController.m in Sources */,
+				18CD299D1BD9C78000F59377 /* TLRecallInfoViewController.m in Sources */,
 				04C93D661A24287200EAA2A4 /* TLBusinessInfoDetail.m in Sources */,
 				04AC6FF31830B32A00BF9B69 /* TLRegister.m in Sources */,
 				04222C5F17EEE589005256F7 /* TLChangsuoViewController.m in Sources */,
+				18CD29AC1BD9C86100F59377 /* TLRecallPhotoViewController.m in Sources */,
 				0413AF2517F3C82200BFA5D4 /* TLPhotoListViewController.m in Sources */,
 				04B3F326181F88F7004F2699 /* TLDcell.m in Sources */,
 				0413AF2817F4078F00BFA5D4 /* TLListInListViewController.m in Sources */,
@@ -1096,6 +1177,7 @@
 				04CB375F1821F88D0036CE99 /* TLMySendTaskList.m in Sources */,
 				04048E1317F42041008319FD /* TLImage.m in Sources */,
 				045E6A451805313F0059B18B /* UICheckBoxButton.m in Sources */,
+				18CD29981BD9C75900F59377 /* TLRecallMentouViewController.m in Sources */,
 				045E6A481805355B0059B18B /* TLServiceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1225,7 +1307,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = tonglianphoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0eb632f9-121d-42dc-a91c-6c4b55c17bf3";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -1251,7 +1333,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = tonglianphoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0eb632f9-121d-42dc-a91c-6c4b55c17bf3";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;

@@ -10,6 +10,7 @@
 
 @implementation TLAppDelegate
 @synthesize loginName,URL;
+@synthesize recallURL,recallMentouURL;
 
 //-(void) setURL:(NSString *)mURL{
 //    URL = mURL;
@@ -45,6 +46,17 @@
     return company;
 }
 
+-(void) setRecall:(TLRecallEntity *)recallEntity{
+    recall = recallEntity;
+}
+
+-(TLRecallEntity *)recall{
+    if(recall == nil){
+        recall = [[TLRecallEntity alloc]init];
+    }
+    return recall;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //[self GetUpdate];
@@ -58,6 +70,12 @@
     self.flag = 0;
     //地理位置信息
     [self location];
+    
+    //recallURL = @"http://10.88.0.32:3080/control/mobile";
+    //recallMentouURL = @"http://10.88.0.32:3080/control";
+    
+    recallURL = @"http://218.28.6.163:1970/control/mobile";
+    recallMentouURL = @"http://218.28.6.163:1970/control";
     
     return YES;
 }

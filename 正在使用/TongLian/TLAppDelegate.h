@@ -14,12 +14,14 @@
 #import "UIImage+Category/wiUIImage+Category.h"
 #import "UIImage+Category/wiUIImageView+Category.h"
 #import "tooles.h"
+#import "TLRecallEntity.h"
 
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 
 @interface TLAppDelegate : UIResponder <UIApplicationDelegate,CLLocationManagerDelegate>{
     NSMutableArray *companyList;
     TLCompany *company;
+    TLRecallEntity *recall;
     NSString *loginName;
     NSString *URL;
     CLLocationManager *locationManager;
@@ -64,6 +66,13 @@
 
 //T+0类型，T+0或者助农取款
 @property (strong,nonatomic)NSString *tType;
+
+//商户回访
+@property (strong,nonatomic)TLRecallEntity *recall;
+@property (strong,nonatomic)NSString *snCode;
+@property (strong,nonatomic)NSString *employeeNo;
+@property (strong,nonatomic)NSString *recallURL;
+@property (strong,nonatomic)NSString *recallMentouURL;
 
 @end
 
